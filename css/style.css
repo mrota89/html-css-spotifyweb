@@ -65,6 +65,10 @@
   border-left: solid 3px #adff2f;
   }
 
+.sidebar section.top ul li:nth-child(4) {
+  padding-bottom: 15px;
+  }
+
 .sidebar section.top ul .big-logo {
   width: 80%;
   padding: 5px 0;
@@ -80,14 +84,8 @@
   vertical-align: middle;
 }
 
-.sidebar section.bottom {
-  flex-direction: column;
-  justify-content: space-between;
-  height: calc(100% - 180px);
-  margin-top: 10px;
-}
 
-.sidebar section.bottom ul.two .box-plus {
+.sidebar section.top ul.one .box-plus {
   height: 30px;
   width: 30px;
   display: inline-block;
@@ -97,19 +95,27 @@
   margin-right: 5px;
 }
 
-.sidebar section.bottom ul.two li > div:hover {
+.sidebar section.top ul.one li > div:hover {
   background-color: #fff;
   cursor: pointer;
 }
 
-.sidebar section.bottom  ul.two .box-plus i {
+.sidebar section.top ul.one .box-plus i {
   font-size: 20px;
   padding: 5px;
 }
 
+.sidebar section.bottom {
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 270px);
+  margin-top: 10px;
+}
+
+
 .sidebar section.bottom ul.two {
   overflow-y: auto;
-  min-height: 150px;
+  min-height: 100px;
 }
 
 .sidebar section.bottom ul.three li:first-child div {
@@ -140,6 +146,7 @@
   padding-left: 10px;
 }
 /* /sidebar */
+
 .central-content {
   width: calc(100% - 200px);
   height: calc(100% - 90px);
@@ -277,10 +284,166 @@ main section .flex-item h2 {
 }
 /* /sezione playlist */
 
-.footer {
+footer {
   height: 90px;
   width: 100%;
   background-color: #2f2f2f;
   position: fixed;
   bottom: 0;
 }
+
+footer .footer-content {
+  justify-content: space-between;
+  margin: 5px 10px;
+  flex-wrap: wrap;
+}
+
+/* sezione sinistra */
+footer .footer-content .left .playing-album {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+footer .footer-content .left .playing-album .img-ft-box {
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer .footer-content .left img {
+  width: 100%;
+}
+
+footer .footer-content .left .brano-nome {
+  display: inline-block;
+  font-size: 70%;
+  padding-left: 10px;
+}
+
+footer .footer-content .left .icon {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+footer .footer-content .left .icon i {
+  padding-left: 5px;
+}
+/* /sezione sinistra */
+
+/* sezione centrale */
+footer .footer-content .middle .player-button {
+  margin: 10px 0;
+  text-align: center;
+  color: #fff;
+  height: 30%;
+}
+
+footer .footer-content .middle .player-button .fa-play-circle-o {
+  font-size: 30px;
+}
+
+footer .footer-content .middle .player-button .fa-play-circle-o:hover {
+ font-size: 35px;
+}
+
+footer .footer-content .middle .player-button i {
+  padding: 0 10px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+footer .footer-content .middle .player span {
+  font-size: 10px;
+  color: #fff;
+}
+
+footer .footer-content .middle .timing-bar {
+  height: 5px;
+  width: 500px;
+  background-color: #5a5a5a;
+  display: inline-block;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin: 0 5px;
+  position: relative;
+}
+
+footer .footer-content .middle .passed-time {
+  height: 5px;
+  width: 150px;
+  background-color: #b3b3b3;
+  border-radius: 2px;
+}
+
+footer .footer-content .middle .timing-bar i{
+  position: absolute;
+  transform: translate(-50% , -50%);
+  top: 50%;
+  left: 29%;
+  color: #fff;
+  display: none;
+}
+
+footer .footer-content .middle .timing-bar:hover {
+  cursor: pointer;
+}
+footer .footer-content .middle .passed-time:hover {
+  background-color: #adff2f;
+}
+
+footer .footer-content .middle .timing-bar:hover i {
+  display: block;
+}
+/* /sezione centrale */
+
+/* sezione destra */
+footer .footer-content .right {
+  margin: 30px 10px;
+}
+
+footer .footer-content .right .input {
+  display: inline-block;
+}
+
+footer .footer-content .right .input i{
+  padding: 0 5px;
+}
+
+footer .footer-content .right .volume-bar {
+  height: 5px;
+  width: 100px;
+  background-color: #5a5a5a;
+  display: inline-block;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin: 0 5px;
+  position: relative;
+}
+
+footer .footer-content .right .percentage-vol {
+  height: 5px;
+  width: 40px;
+  background-color: #b3b3b3;
+  border-radius: 2px;
+}
+
+footer .footer-content .right .volume-bar i{
+  position: absolute;
+  transform: translate(-50% , -50%);
+  top: 50%;
+  left: 35%;
+  color: #fff;
+  display: none;
+}
+
+footer .footer-content .right .volume-bar:hover {
+  cursor: pointer;
+}
+footer .footer-content .right .percentage-vol:hover {
+  background-color: #adff2f;
+}
+
+footer .footer-content .right .volume-bar:hover i {
+  display: block;
+}
+/* /sezione destra */
