@@ -153,6 +153,7 @@
  top: 0;
  width: calc(100% - 200px);
  height: 90px;
+ z-index: 2;
 }
 
 .upgrade .upgr-button {
@@ -179,7 +180,6 @@ main {
 .navbar {
   background-color: #141922;
   margin-top: 90px;
-  position: relative;
 }
 
 .navbar ul {
@@ -211,33 +211,71 @@ main {
 /* /navbar */
 
 /* sezione playlist */
+main .title-row  {
+  margin: 20px 0 20px 10px;
+  font-size: 80%;
+}
 main .row-play {
   flex-wrap: wrap;
+  margin-left: 10px;
 }
 
 main section .flex-item {
-  height: 100px;
-  background-color: red;
-  border: solid 2px black;
-  margin: 15px;
+  margin-right: 15px;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 60%;
 }
 
 main section .flex-item {
-  width: calc((100%/6) - 30px)
+  width: calc((100%/6) - 15px)
 }
 
 @media screen and (max-width: 992px) {
   main section .flex-item {
-    width: calc((100%/4) - 30px)
+    width: calc((100%/4) - 15px)
   }
 }
 
 @media screen and (max-width: 768px) {
   main section .flex-item {
-    width: calc((100%/2) - 30px)
+    width: calc((100%/2) - 15px)
   }
 }
-/* sezione playlist */
+
+main section .flex-item .img-cont {
+  position: relative;
+}
+
+main section .flex-item .layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transform: translate(-50% , -50%);
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+
+main section .flex-item .layer img {
+  width: 30%;
+  margin-top: 35%;
+}
+
+.img-cont:hover .layer {
+  display: block;
+  cursor: pointer;
+}
+
+main section .flex-item img {
+  width: 100%;
+}
+
+main section .flex-item h2 {
+  margin: 5px 0;
+}
+/* /sezione playlist */
 
 .footer {
   height: 90px;
