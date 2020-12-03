@@ -4,57 +4,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper clearfix">
+    <div class="wrapper">
 
       <!-- sidebar -->
-      <div class="sidebar fl">
+      <nav class="sidebar fl">
 
         <section class="top">
           <ul class= "one">
-            <li>logo</li>
-            <li>home</li>
-            <li>cerca</li>
-            <li>la tua libreria</li>
+            <li><img class="big-logo" src="img/images/logo.svg" alt=""></li>
+            <li><img src="img/images/home.svg" alt=""><span>Home</span></li>
+            <li><img src="img/images/search.svg" alt=""><span>Cerca</span></li>
+            <li><img src="img/images/libreria.svg" alt=""><span>La tua libreria</span></li>
           </ul>
         </section>
 
         <section class="bottom dis-flex">
           <ul class= "two">
-            <li>playlist</li>
-            <li>crea playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
+            <li class="white">PLAYLIST</li>
+            <li>
+              <div class="box-plus"><i class="fa fa-plus black" aria-hidden="true"></i></div> <span>Crea Playlist</span>
+            </li>
+            <li><span>Nome Playlist</span></li>
+            <li><span>Nome Playlist</span></li>
+            <li><span>Nome Playlist</span></li>
+            <li><span>Nome Playlist</span></li>
+            <li><span>Nome Playlist</span></li>
+            <li><span>Nome Playlist</span></li>
           </ul>
 
           <ul class= "three">
-            <li>installa app</li>
-            <li>John Doe</li>
+            <li>
+              <div><img src="img/images/download.svg" alt=""><span>Installa app</span></div>
+            </li>
+            <li><div class="profile-icon"></div><span class="white">John Doe</span></li>
           </ul>
         </section>
-      </div>
+      </nav>
       <!-- /sidebar -->
 
-      <!-- header -->
-      <div class="central-content fr">
-        <header>
-          <section class="upgrade clearfix">
-            <div class="upgr-button fr">
-              effettua l'upgrade
-            </div>
-          </section>
-        </header>
-        <!-- /header -->
+
+      <main class="central-content fr">
+        <!-- effettua upgrade button -->
+        <section class="upgrade">
+          <div class="upgr-button fr">
+            effettua l'upgrade
+          </div>
+        </section>
+        <!-- /effettua upgrade button -->
 
         <!-- navbar -->
-        <nav class= "navbar">
-          <ul>
+        <nav class= "navbar ">
+          <ul class="dis-flex">
             <li>in evidenza</li>
             <li>podcast</li>
             <li>classifiche</li>
@@ -65,59 +70,52 @@
         </nav>
         <!-- /navbar -->
 
-        <!-- sezione playlist da rivedere-->
-        <main class="dis-flex">
-          <section class="col-one">
-            <div class="flex-item">
-              riga 1
-            </div>
+        <!-- sezione playlist -->
+        <section class="row-play one dis-flex">
+          <div class="flex-item">
+            1
+          </div>
 
-            <div class="flex-item">
-              riga 2
-            </div>
+          <div class="flex-item">
+            2
+          </div>
 
-            <div class="flex-item">
-              riga 3
-            </div>
+          <div class="flex-item">
+            3
+          </div>
 
-          </section>
+          <div class="flex-item">
+            4
+          </div>
 
-          <section class="col-two">
-            <div class="flex-item">
-              riga 1
-            </div>
+          <div class="flex-item">
+            5
+          </div>
+        </section>
 
-            <div class="flex-item">
-              riga 2
-            </div>
+        <section class="row-play two dis-flex">
+          <div class="flex-item">
+            1
+          </div>
 
-            <div class="flex-item">
-              riga 3
-            </div>
-          </section>
+          <div class="flex-item">
+            2
+          </div>
+        </section>
 
-          <section class="col-three">
-            <div class="flex-item">
-              riga 1
-            </div>
-          </section>
+        <section class="row-play three dis-flex">
+          <div class="flex-item">
+            1
+          </div>
 
-          <section class="col-four">
-            <div class="flex-item">
-              riga 1
-            </div>
-          </section>
+          <div class="flex-item">
+            2
+          </div>
+        </section>
+        <!-- /sezione playlist -->
 
-          <section class="col-five">
-            <div class="flex-item">
-              riga 1
-            </div>
-          </section>
+      </main>
 
-        </main>
-
-      </div>
-      <!-- /sezione playlist da rivedere-->
 
       <div class="footer">
 
