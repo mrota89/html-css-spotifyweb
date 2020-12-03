@@ -295,10 +295,12 @@ footer {
 footer .footer-content {
   justify-content: space-between;
   margin: 5px 10px;
-  flex-wrap: wrap;
 }
 
-/* sezione sinistra */
+/* sezione sinistra footer */
+footer .footer-content .left  {
+  width: 33%;
+}
 footer .footer-content .left .playing-album {
   display: inline-block;
   margin: 20px 0;
@@ -328,9 +330,13 @@ footer .footer-content .left .icon {
 footer .footer-content .left .icon i {
   padding-left: 5px;
 }
-/* /sezione sinistra */
+/* /sezione sinistra footer*/
 
-/* sezione centrale */
+/* sezione centrale footer*/
+footer .footer-content .middle {
+  width: 33%;
+}
+
 footer .footer-content .middle .player-button {
   margin: 10px 0;
   text-align: center;
@@ -394,11 +400,13 @@ footer .footer-content .middle .passed-time:hover {
 footer .footer-content .middle .timing-bar:hover i {
   display: block;
 }
-/* /sezione centrale */
+/* /sezione centrale footer*/
 
-/* sezione destra */
+/* sezione destra footer*/
 footer .footer-content .right {
-  margin: 30px 10px;
+  margin: 30px;
+  width: 33%;
+  text-align: right;
 }
 
 footer .footer-content .right .input {
@@ -446,4 +454,4 @@ footer .footer-content .right .percentage-vol:hover {
 footer .footer-content .right .volume-bar:hover i {
   display: block;
 }
-/* /sezione destra */
+/* /sezione destra footer*/
