@@ -1,307 +1,314 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pad-mrg-class.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spotify</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/pad-mrg-class.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <div id="wrapper">
 
-<body>
-  <div id="wrapper">
+      <!-- sidebar -->
+      <nav class="sidebar fbold bg-black pfixed">
+        <section class="top">
+          <ul class="one font12 prelative">
+            <li class="padl20 padr20 padt5 padb5">
+              <img class="big-logo hidden-xs pad-tb5" src="img/images/logo.svg" alt="">
+            </li>
 
-    <!-- sidebar -->
-    <nav class="sidebar fbold bg-black pfixed">
-      <section class="top">
-        <ul class="one font12 prelative">
-          <li class="padl20 padr20 padt5 padb5">
-            <img class="big-logo hidden-xs pad-tb5" src="img/images/logo.svg" alt="">
-          </li>
+            <li class="padl20 padr20 padt5 padb5">
+              <img class="logo-small hidden-lg show-xs w30" src="img/images/logo-small.svg" alt="">
+            </li>
 
-          <li class="padl20 padr20 padt5 padb5">
-            <img class="logo-small hidden-lg show-xs w30" src="img/images/logo-small.svg" alt="">
-          </li>
+            <li id="home" class="padl20 padr20 padt5 padb5">
+              <img class="w30 va-middle mrgr5" src="img/images/home.svg" alt=""><span class="change hidden-xs pad-l-5">Home</span>
+            </li>
 
-          <li id="home" class="padl20 padr20 padt5 padb5">
-            <img class="w30" src="img/images/home.svg" alt=""><span class="change hidden-xs pad-l-5">Home</span>
-          </li>
+            <li class="padl20 padr20 padt5 padb5">
+              <img class="w30 va-middle mrgr5" src="img/images/search.svg" alt=""><span class="change hidden-xs pad-l-5">Cerca</span>
+            </li>
 
-          <li class="padl20 padr20 padt5 padb5">
-            <img class="w30" src="img/images/search.svg" alt=""><span class="change hidden-xs pad-l-5">Cerca</span>
-          </li>
+            <li class="padl20 padr20 padt5 padb20">
+              <img class="w30 va-middle mrgr5" src="img/images/libreria.svg" alt=""><span class="change hidden-xs pad-l-5">La tua libreria</span>
+            </li>
 
-          <li class="padl20 padr20 padt5 padb20">
-            <img class="w30" src="img/images/libreria.svg" alt=""><span class="change hidden-xs pad-l-5">La tua libreria</span>
-          </li>
+            <li class="white fbold hidden-xs padl20 padr20 padt5 padb5">PLAYLIST</li>
 
-          <li class="white fbold hidden-xs padl20 padr20 padt5 padb5">PLAYLIST</li>
+            <li class="add-button hidden-xs padl20 padr20 padt5 padb5">
+              <span class="change">Crea Playlist</span>
+            </li>
+          </ul>
+        </section>
 
-          <li class="add-button hidden-xs padl20 padr20 padt5 padb5">
-            <span class="change">Crea Playlist</span>
-          </li>
-        </ul>
-      </section>
+        <section class="bottom dis-flex font12">
+          <ul class="two">
+            <li class="hidden-xs padt10 padb10 padl20 padr20">
+              <span class="change">Nome Playlist</span>
+            </li>
+            <li class="hidden-xs padt10 padb10 padl20 padr20">
+              <span class="change">Nome Playlist</span>
+            </li>
+            <li class="hidden-xs padt10 padb10 padl20 padr20">
+              <span class="change">Nome Playlist</span>
+            </li>
+            <li class="hidden-xs padt10 padb10 padl20 padr20">
+              <span class="change">Nome Playlist</span>
+            </li>
+            <li class="hidden-xs padt10 padb10 padl20 padr20">
+              <span class="change">Nome Playlist</span>
+            </li>
+            <li class="hidden-xs padt10 padb10 padl20 padr20">
+              <span class="change">Nome Playlist</span>
+            </li>
+            <li class="hidden-xs padt10 padb10 padl20 padr20">
+              <span class="change">Nome Playlist</span>
+            </li>
+          </ul>
 
-      <section class="bottom dis-flex font12">
-        <ul class="two">
-          <li class="hidden-xs padt10 padb10 padl20 padr20"><span class="change">Nome Playlist</span></li>
-          <li class="hidden-xs padt10 padb10 padl20 padr20"><span class="change">Nome Playlist</span></li>
-          <li class="hidden-xs padt10 padb10 padl20 padr20"><span class="change">Nome Playlist</span></li>
-          <li class="hidden-xs padt10 padb10 padl20 padr20"><span class="change">Nome Playlist</span></li>
-          <li class="hidden-xs padt10 padb10 padl20 padr20"><span class="change">Nome Playlist</span></li>
-          <li class="hidden-xs padt10 padb10 padl20 padr20"><span class="change">Nome Playlist</span></li>
-          <li class="hidden-xs padt10 padb10 padl20 padr20"><span class="change">Nome Playlist</span></li>
-        </ul>
-
-        <ul class="three">
-          <li class="padl20 padr20 padt5 padb5">
-            <div><img class="w15 padt5 padb5" src="img/images/download.svg" alt=""><span class="padl10 padr10 change hidden-xs">Installa app</span></div>
-          </li>
-          <li class="profile padl20 padr20 padt5 padb5">
-            <div class="profile-icon">
-              <img  src="img/images/profile.svg" alt="">
-            </div>
-            <strong class="hidden-xs font12 white padl10 padr10">John Doe</strong>
-          </li>
-        </ul>
-      </section>
-    </nav>
-    <!-- /sidebar -->
-
-
-    <main class="central-content fr">
-
-      <!-- effettua upgrade button -->
-      <section class="upgrade bg-trsp pfixed padr20 padt20 padb20">
-        <div class="upgr-button padl20 padr20 padt10 padb10 fr">
-          <a class="font12 white fbold" href="#">EFFETTUA L'UPGRADE</a>
-        </div>
-      </section>
-      <!-- /effettua upgrade button -->
-
-      <!-- navbar -->
-      <nav class="navbar">
-        <ul class="dis-flex wrap fbold font12 prelative">
-          <li class="padl20 padr10">
-            <a class="change" href="#">IN EVIDENZA</a>
-          </li>
-          <li class="padl20 padr10">
-            <a class="change" href="#">PODCAST</a>
-          </li>
-          <li class="padl20 padr10">
-            <a class="change" href="#">CLASSIFICHE</a>
-          </li>
-          <li class="padl20 padr10">
-            <a class="change" href="#">GENERI E MOOD</a>
-          </li>
-          <li class="padl20 padr10">
-            <a class="change" href="#">NUOVE USCITE</a>
-          </li>
-          <li class="padl20 padr10">
-            <a class="change" href="#">SCOPRI</a>
-          </li>
-        </ul>
+          <ul class="three">
+            <li class="padl20 padr20 padt5 padb5">
+              <div>
+                <img class="w15 padt5 padb5 va-middle" src="img/images/download.svg" alt="">
+                <span class="padl10 padr10 change hidden-xs">Installa app</span>
+              </div>
+            </li>
+            <li class="profile padl20 padr20 padt5 padb5">
+              <div class="profile-icon va-middle">
+                <img class="" src="img/images/profile.svg" alt="">
+              </div>
+              <strong class="hidden-xs font12 white padl10 padr10">John Doe</strong>
+            </li>
+          </ul>
+        </section>
       </nav>
-      <!-- /navbar -->
-
-      <!-- sezione playlist -->
-      <!-- riga 1 -->
-      <div class="title-row font12 mrgl10 mrgt20 mrgb20">
-        <h1 class="white">Recently played</h1>
-      </div>
-
-      <section class="row-play one dis-flex wrap mrgl10">
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/metal_lifting.jpg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Heavy Metal</h2>
-          <span>Subtitle</span>
-        </div>
-
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/stranger.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Stranger Things, vol.1 (a Netflix Original Soundtrack)</h2>
-          <span>Kyle Dixon & Michael Stain</span>
-        </div>
-
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/aquietplace.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">A quiet place</h2>
-          <span>Subtitle</span>
-        </div>
-
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/split.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Split</h2>
-          <span>Subtitle</span>
-        </div>
-
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/cure.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">A cure for wellness</h2>
-          <span>Subtitle</span>
-        </div>
-
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/sinister.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Sinister</h2>
-          <span>Subtitle</span>
-        </div>
-      </section>
-      <!-- /riga 1 -->
-
-      <!-- riga 2-->
-      <div class="title-row font12 mrgl10 mrgt20 mrgb20">
-        <h1 class="white">Creato per John Doe</h1>
-        <span>Più ascolti, più accurati saranno i suggerimenti.</span>
-      </div>
-
-      <section class="row-play two dis-flex wrap mrgl10">
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/radar.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Release Radar</h2>
-        </div>
-
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/mixdaily.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Daily Mix 1</h2>
-        </div>
-      </section>
-      <!-- /riga 2-->
-
-      <!-- riga 3 -->
-      <div class="title-row font12 mrgl10 mrgt20 mrgb20">
-        <h1 class="white">Artisti più popolari</h1>
-        <span>Più ascolti, più accurati saranno i suggerimenti.</span>
-      </div>
-
-      <section class="row-play three dis-flex wrap mrgl10">
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/einaudi.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Einaudi</h2>
-        </div>
-
-        <div class="flex-item font10 mrgr15 mrgb10">
-          <div class="img-cont prelative">
-            <img src="img/images/youg.jpeg" alt="">
-            <div class="layer bg-trsp">
-              <img src="img/images/play.png" alt="">
-            </div>
-          </div>
-          <h2 class="white padt10 padb10">Lana del Rey</h2>
-        </div>
-      </section>
-      <!-- /riga 3 -->
-      <!-- /sezione playlist -->
-    </main>
+      <!-- /sidebar -->
 
 
-    <footer class="pfixed">
-      <div class="footer-content dis-flex">
+      <main class="central-content fr">
 
-        <section class="left dis-flex">
-          <div class="playing-album mrgl5 mrgr5 dis-flex">
-            <div class="img-ft-box">
-              <img src="img/images/sinister.jpeg" alt="">
-            </div>
-            <div class="nome-brano padl10 font12">
-              <h3 class="white">Sinister</h3>
-              <span class="change">Brano Nome</span>
-            </div>
-          </div>
-
-          <div class="icon padl10 padr10">
-            <i class="fa fa-heart-o padl5 change" aria-hidden="true"></i>
-            <i class="fa fa-folder-o padl5 change" aria-hidden="true"></i>
+        <!-- effettua upgrade button -->
+        <section class="upgrade bg-trsp pfixed padr20 padt20 padb20">
+          <div class="upgr-button padl20 padr20 padt10 padb10 fr transform">
+            <a class="font12 white fbold" href="#">EFFETTUA L'UPGRADE</a>
           </div>
         </section>
+        <!-- /effettua upgrade button -->
 
-        <section class="middle">
+        <!-- navbar -->
+        <nav class="navbar">
+          <ul class="dis-flex wrap fbold font12 prelative">
+            <li class="padl20 padr10">
+              <a class="change" href="#">IN EVIDENZA</a>
+            </li>
+            <li class="padl20 padr10">
+              <a class="change" href="#">PODCAST</a>
+            </li>
+            <li class="padl20 padr10">
+              <a class="change" href="#">CLASSIFICHE</a>
+            </li>
+            <li class="padl20 padr10">
+              <a class="change" href="#">GENERI E MOOD</a>
+            </li>
+            <li class="padl20 padr10">
+              <a class="change" href="#">NUOVE USCITE</a>
+            </li>
+            <li class="padl20 padr10">
+              <a class="change" href="#">SCOPRI</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /navbar -->
 
-          <div class="player-button dis-flex padt10 padb10 mrgr5 mrgl5">
-            <i class="fa fa-random padr10 padl10 white change" aria-hidden="true"></i>
-            <i class="fa fa-step-backward padr10 padl10 white change" aria-hidden="true"></i>
-            <i class="fa fa-play-circle-o padr10 padl10 white change" aria-hidden="true"></i>
-            <i class="fa fa-step-forward padr10 padl10 white change" aria-hidden="true"></i>
-            <i class="fa fa-repeat padr10 padl10 white change" aria-hidden="true"></i>
+        <!-- sezione playlist -->
+        <!-- riga 1 -->
+        <div class="title-row font12 mrgl10 mrgt20 mrgb20">
+          <h1 class="white">Recently played</h1>
+        </div>
+
+        <section class="row-play one dis-flex wrap mrgl10">
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/metal_lifting.jpg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Heavy Metal</h2>
+            <span>Subtitle</span>
           </div>
 
-          <div class="player dis-flex">
-            <div class="time mrgr10 font10 fbold white">0:25</div>
-            <div class="progression-bar">
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/stranger.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Stranger Things, vol.1 (a Netflix Original Soundtrack)</h2>
+            <span>Kyle Dixon & Michael Stain</span>
+          </div>
+
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/aquietplace.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">A quiet place</h2>
+            <span>Subtitle</span>
+          </div>
+
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/split.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Split</h2>
+            <span>Subtitle</span>
+          </div>
+
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/cure.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">A cure for wellness</h2>
+            <span>Subtitle</span>
+          </div>
+
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/sinister.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Sinister</h2>
+            <span>Subtitle</span>
+          </div>
+        </section>
+        <!-- /riga 1 -->
+
+        <!-- riga 2-->
+        <div class="title-row font12 mrgl10 mrgt20 mrgb20">
+          <h1 class="white">Creato per John Doe</h1>
+          <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+        </div>
+
+        <section class="row-play two dis-flex wrap mrgl10">
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/radar.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Release Radar</h2>
+          </div>
+
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="w100" src="img/images/mixdaily.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Daily Mix 1</h2>
+          </div>
+        </section>
+        <!-- /riga 2-->
+
+        <!-- riga 3 -->
+        <div class="title-row font12 mrgl10 mrgt20 mrgb20">
+          <h1 class="white">Artisti più popolari</h1>
+          <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+        </div>
+
+        <section class="row-play three dis-flex wrap mrgl10">
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="last w100" src="img/images/einaudi.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Einaudi</h2>
+          </div>
+
+          <div class="flex-item font10 mrgr15 mrgb10">
+            <div class="img-cont prelative">
+              <img class="last w100" src="img/images/youg.jpeg" alt="">
+              <div class="layer bg-trsp w100">
+                <img src="img/images/play.png" alt="">
+              </div>
+            </div>
+            <h2 class="white padt10 padb10">Lana del Rey</h2>
+          </div>
+        </section>
+        <!-- /riga 3 -->
+        <!-- /sezione playlist -->
+      </main>
+
+      <footer class="pfixed w100">
+        <div class="footer-content dis-flex align-center">
+
+          <section class="left dis-flex align-center">
+            <div class="playing-album mrgl5 mrgr5 dis-flex align-center">
+              <div class="img-ft-box">
+                <img class="w100" src="img/images/sinister.jpeg" alt="">
+              </div>
+              <div class="nome-brano padl10 font12">
+                <h3 class="white">Sinister</h3>
+                <span class="change">Brano Nome</span>
+              </div>
+            </div>
+            <div class="icon padl10 padr10">
+              <i class="fa fa-heart-o padl5 change" aria-hidden="true"></i>
+              <i class="fa fa-folder-o padl5 change" aria-hidden="true"></i>
+            </div>
+          </section>
+
+          <section class="middle">
+            <div class="player-button dis-flex align-center padt10 padb10 mrgr5 mrgl5">
+              <i class="fa fa-random mrgr10 mrgl10 white change" aria-hidden="true"></i>
+              <i class="fa fa-step-backward mrgr10 mrgl10 white change" aria-hidden="true"></i>
+              <i class="fa fa-play-circle-o mrgr10 mrgl10 white transform change" aria-hidden="true"></i>
+              <i class="fa fa-step-forward mrgr10 mrgl10 white change" aria-hidden="true"></i>
+              <i class="fa fa-repeat mrgr10 mrgl10 white change" aria-hidden="true"></i>
+            </div>
+            <div class="player dis-flex align-center">
+              <div class="time mrgr10 font10 fbold white">0:25</div>
+              <div class="progression-bar">
+                <div class="perc-30"></div>
+                <i class="fa fa-circle cursore white" aria-hidden="true"></i>
+              </div>
+              <div class="time mrgr10 mrgl10 font10 fbold white">4:35</div>
+            </div>
+          </section>
+
+          <section class="right dis-flex align-center">
+            <div class="input mrgr5">
+              <i class="fa fa-list-ul font12 mrgr10 white" aria-hidden="true"></i>
+              <i class="fa fa-desktop font12 mrgr10 white" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-volume-up font12 white" aria-hidden="true"></i>
+            <div class="progression-bar mrgl5 mrgr5">
               <div class="perc-30"></div>
-              <i class="fa fa-circle cursore" aria-hidden="true"></i>
+              <i class="fa fa-circle cursore white" aria-hidden="true"></i>
             </div>
-            <div class="time mrgr10 mrgl10 font10 fbold white">4:35</div>
-          </div>
-
-        </section>
-
-        <section class="right dis-flex">
-          <div class="input mrgr5">
-            <i class="fa fa-list-ul font12 mrgr10 white" aria-hidden="true"></i>
-            <i class="fa fa-desktop font12 mrgr10 white" aria-hidden="true"></i>
-          </div>
-          <i class="fa fa-volume-up font12 white" aria-hidden="true"></i>
-          <div class="progression-bar mrgl5 mrgr5">
-            <div class="perc-30"></div>
-            <i class="fa fa-circle cursore" aria-hidden="true"></i>
-          </div>
-        </section>
-
-      </div>
-    </footer>
-
-  </div>
-
-</body>
-
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
